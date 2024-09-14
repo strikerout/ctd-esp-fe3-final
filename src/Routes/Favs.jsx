@@ -42,7 +42,7 @@ const Favs = () => {
       </div>
       <div className="button-container">
         <button className="clear-btn" onClick={clearAllFavs}>
-          Clean All Favs
+          Clear All Favs
         </button>
       </div>
     </>
