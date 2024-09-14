@@ -1,11 +1,9 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
-import { ContextGlobal } from '../Components/utils/global.context';
-import '../styles/Detail.css';
+import '../Styles/Detail.css';
 
 const Detail = () => {
   const { id } = useParams();
-  const { theme } = useContext(ContextGlobal);
 
   const [dentist, setDentist] = useState(null);
   const [loading, setLoading] = useState(true);
