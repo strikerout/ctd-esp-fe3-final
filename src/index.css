@@ -40,35 +40,6 @@ a:hover{
   color: rgb(136, 136, 136);
 } 
 
-footer {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 2rem;
-  position: relative;
-  bottom: 0;
-  width: 90%;
-  height: 40px;
-  margin-top: 2rem;
-}
-
-footer > img{
-  width: 200px;
-  margin: 0;
-}
-footer > p{
-  margin: 0;
-  padding-top: 0.7rem;
-}
-
-form{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 300px;
-  height: 100px;
-  margin: 0 auto;
-}
 
 .card{
   display: flex;
@@ -81,7 +52,7 @@ form{
 }
 
 .card:hover{
-  border: 0.5px solid rgb(206, 217, 142);
+  border: 0.5px solid #ca0404;
 }
 
 .card-grid{
@@ -114,7 +85,6 @@ tr:nth-child(even) {
 }
 
 .dark{
-  background-color: #12121296;
   color: white;
 }
 .dark > a {

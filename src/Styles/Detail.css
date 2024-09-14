@@ -1,0 +1,43 @@
+.detail {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: inherit;
+  box-sizing: border-box;
+}
+
+.detail.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.detail.dark {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+.detail p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.detail a {
+  color: #ca0404;
+  text-decoration: none;
+}
+
+.detail a:hover {
+  text-decoration: underline;
+  background-color: #860f0f;
+}
+
+.detail strong {
+  font-weight: bold;
+  color: #333;
+}
+
+.detail.dark strong {
+  color: #ccc;
+}
