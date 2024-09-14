@@ -1,22 +1,25 @@
-import React, { useContext } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import Card from '../Components/Card';
 import { ContextGlobal } from '../Components/utils/global.context';
 import '../Styles/Favs.css';
 
 const Favs = () => {
   const { theme } = useContext(ContextGlobal);
+  const [favs, setFavs] = useState([]);
 
-  const getFavs = () => {
-    const favs = JSON.parse(localStorage.getItem('favs')) || [];
-    return favs;
-  };
+  useEffect(() => {
+    const getFavs = () => {
+      const favs = JSON.parse(localStorage.getItem('favs')) || [];
+      setFavs(favs);
+    };
+    
+    getFavs();
+  }, []);
 
   const clearAllFavs = () => {
     localStorage.removeItem('favs');
-    window.location.reload();
+    setFavs([]);
   };
-
-  const favs = getFavs();
 
   return (
     <>

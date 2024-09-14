@@ -35,7 +35,7 @@ const Card = ({ name, username, id, theme }) => {
   return (
     <div className={`card ${theme}`}>
       <img
-        src="../../../public/images/doctor.jpg"
+        src="public\images\doctor.jpg"
         alt="Dentist"
         className="card-image"
       />
