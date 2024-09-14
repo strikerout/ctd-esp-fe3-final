@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../Styles/Cards.css";
 import { FaStar, FaRegStar } from 'react-icons/fa'; 
-import doctorImage from '../Assets/doctor.jpg';
 
 const Card = ({ name, username, id, theme }) => { 
   const [isFavorite, setIsFavorite] = useState(false);
@@ -36,7 +35,7 @@ const Card = ({ name, username, id, theme }) => {
   return (
     <div className={`card ${theme}`}>
       <img
-        src={doctorImage}
+        src="/images/doctor.jpg"
         alt="Dentist"
         className="card-image"
       />
